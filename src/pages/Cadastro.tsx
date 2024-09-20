@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Cadastro.css';
+import '../styles/Cadastro.css';
 
 
 

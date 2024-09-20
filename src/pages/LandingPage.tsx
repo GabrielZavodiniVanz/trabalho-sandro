@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import './LandingPage.css';
-import Header from './Header';
+import '../styles/LandingPage.css';
+import Header from '../components/Header';
 
 const LandingPage: React.FC = () => {
 
@@ -30,17 +30,17 @@ const LandingPage: React.FC = () => {
         <h2>Promoções Exclusivas</h2>
         <div className="promotion-cards">
           <div className="promotion-card">
-            <i className="fas fa-gift"></i> {/* Ícone de presente */}
+            <i className="fas fa-gift"></i>
             <h3>Bônus de Boas-Vindas</h3>
             <p>Ganhe um bônus de até 100% no seu primeiro depósito!</p>
           </div>
           <div className="promotion-card">
-            <i className="fas fa-coins"></i> {/* Ícone de moedas */}
+            <i className="fas fa-coins"></i> 
             <h3>Rodadas Grátis</h3>
             <p>Aproveite 50 rodadas grátis em slots selecionados ao se registrar. Jogue e ganhe sem gastar nada!</p>
           </div>
           <div className="promotion-card">
-            <i className="fas fa-refresh"></i> {/* Ícone de recarga */}
+            <i className="fas fa-refresh"></i> 
             <h3>Bônus de Recarga</h3>
             <p>Ganhe 20% de bônus em todos os seus depósitos durante o fim de semana!</p>
           </div>

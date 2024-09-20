@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LandingPage from './components/LandingPage';
-import Cadastro from './pages/cadastro/Cadastro';
+import LandingPage from '../src/pages/LandingPage';
+import Cadastro from '../src/pages/Cadastro';
 import Header from './components/Header'; 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
