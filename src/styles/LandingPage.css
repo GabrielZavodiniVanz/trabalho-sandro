@@ -51,7 +51,7 @@
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  border: 1px solid  #56ab2f
+  border: 1px solid  #56ab2f;
 }
 
 .cta-button:hover {
@@ -104,8 +104,6 @@
   width: 200%;
   height: 7px;
   background: linear-gradient(90deg, #56ab2f, #a8e063);
-  
-  
 }
 
 .promotion-card:hover {
@@ -130,51 +128,65 @@
   color: #666;
 }
 
-.features {
+/* Seção de Contato */
+.contact {
   padding: 80px 20px;
   text-align: center;
-  background-color: #fffdfd;
+  background-color: #ffffff;
   border-top: 1px solid #eee;
 }
 
-.features h2 {
+.contact h2 {
   font-size: 2.8rem;
-  margin-bottom: 50px;
-  text-transform: uppercase;
+  margin-bottom: 40px;
   letter-spacing: 1.5px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
   color: #333;
 }
 
-.features-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
-.feature {
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  max-width: 320px;
-  text-align: center;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+button {
+  padding: 12px 20px;
+  background-color: #56ab2f;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.feature:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.feature h3 {
-  font-size: 1.9rem;
-  margin-bottom: 15px;
-}
-
-.feature p {
-  font-size: 1rem;
-  color: #666;
+button:hover {
+  background-color: #e43f00;
+  transform: translateY(-5px);
 }
 
 .footer {
@@ -187,21 +199,44 @@
   box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-links p,
+.about-us p {
+  margin: 10px 0;
+}
+
+.footer-links a,
+.about-us a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.about-us a:hover {
+  color: #56ab2f;
+}
+
+/* Para os ícones das redes sociais */
+.footer-links a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-links a:hover {
+  color: #56ab2f;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 3rem;
-  }
-
-  .hero p {
-    font-size: 1.4rem;
-  }
-
-  .promotions h2, .features h2 {
-    font-size: 2rem;
-  }
-
-  .promotion-card, .feature {
-    max-width: 100%;
-    margin-bottom: 30px;
+  .footer-links p,
+  .about-us p {
+    font-size: 1rem;
   }
 }
